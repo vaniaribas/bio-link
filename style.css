@@ -1,0 +1,204 @@
+body{
+background: rgb(153,204,222);
+background: linear-gradient(99deg, rgba(153,204,222,1) 0%, rgba(113,178,201,1) 35%, rgba(68,134,156,1) 100%);
+font-family: Montserrat;
+}
+
+
+.header {
+display: flex;
+flex-direction: column;
+justify-content: center;    
+margin: 54px auto 40px;
+width: fit-content;
+}
+
+.container{
+width: 334px;
+margin: 0 auto;
+}
+
+
+.avatar {
+display: flex;
+flex-direction: column;
+justify-content: center;
+box-sizing: border-box;
+height: 138px;
+width: 138px;
+border: 2px solid #FFFFFF;
+border-radius: 50%;
+background-color: #71B2C9;
+box-shadow: 0 3px 5px -1px rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12);
+}
+
+p{    
+height: 19px;
+width: auto;
+margin-top: 24px;
+color: #F2F2F2;
+font-family: Montserrat;
+text-align: center;
+font-size: 16px;
+font-weight: 600;  
+}
+
+.links-btn{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 0 auto;
+width: fit-content;
+}
+
+.btn{
+display: flex;
+justify-content: center;    
+margin-bottom: 24px;    
+box-sizing: border-box;
+height: 52px;
+width: 334px;
+padding-top: 14px;
+border: 1px solid #FFFFFF;
+color: #F2F2F2;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+letter-spacing: 0;
+line-height: 19px;
+text-decoration: none;
+}
+
+.btn:hover{
+background-color: #FFFFFF;
+color: #71B2C9;
+}
+
+.app-badge{  
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.badge:hover{
+    opacity:0.5;
+    }
+
+.social-media{
+margin-top: 64px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+.socialmedia-btn:hover{
+opacity:0.5;
+}
+
+/*
+@media only screen and (max-device-width: 480px) {
+    
+    body{
+        background: rgb(153,204,222);
+        background: linear-gradient(99deg, rgba(153,204,222,1) 0%, rgba(113,178,201,1) 35%, rgba(68,134,156,1) 100%);
+        font-family: Montserrat;
+        }
+        
+        
+        .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        margin: 120px auto 40px;
+        }
+        
+        .container{
+        margin: 0 auto;
+        }
+        
+        
+        .avatar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        height: 338px;
+        width: 338px;
+        border: 2px solid #FFFFFF;
+        border-radius: 50%;
+        background-color: #71B2C9;
+        box-shadow: 0 3px 5px -1px rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12);
+        }
+
+        .logo{
+            width: 238px;
+            align-self: center;
+        }
+        
+        p{    
+        height: 19px;
+        width: auto;
+        margin-top: 40px;
+        color: #F2F2F2;
+        font-family: Montserrat;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 600;  
+        }
+        
+        .links-btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+        
+        .btn{
+        display: flex;
+        justify-content: center;    
+        margin-bottom: 24px;    
+        box-sizing: border-box;
+        height: 52px;
+        width: 500px;
+        padding-top: 14px;
+        border: 1px solid #FFFFFF;
+        color: #F2F2F2;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 19px;
+        text-decoration: none;
+        }
+        
+        .btn:hover{
+        background-color: #FFFFFF;
+        color: #71B2C9;
+        }
+        
+        .app-badge{  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        }
+        
+        .badge:hover{
+            opacity:0.5;
+            }
+        
+        .social-media{
+        margin-top: 64px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        }
+        
+        .socialmedia-btn:hover{
+        opacity:0.5;
+        }
+
+
+
+
+
+
+  } */
