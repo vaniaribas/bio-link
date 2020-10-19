@@ -1,8 +1,10 @@
-body{
+html {
+height: 100%;
 background: rgb(153,204,222);
-background: linear-gradient(99deg, rgba(153,204,222,1) 0%, rgba(113,178,201,1) 35%, rgba(68,134,156,1) 100%);
+background: linear-gradient(90deg, rgba(153,204,222,1) 0%, rgba(113,178,201,1) 50%, rgba(153,204,222,1) 100%);
 font-family: Montserrat;
 }
+
 
 
 .header {
@@ -80,12 +82,14 @@ flex-direction: row;
 justify-content: space-between;
 }
 
+
 .badge:hover{
     opacity:0.5;
     }
 
 .social-media{
-margin-top: 64px;
+margin-top: 40px;
+margin-bottom: 24px;
 display: flex;
 flex-direction: row;
 justify-content: space-evenly;
@@ -95,110 +99,181 @@ justify-content: space-evenly;
 opacity:0.5;
 }
 
-/*
-@media only screen and (max-device-width: 480px) {
+
+@media only screen and (max-device-width: 320px) {
+
+.header {
+display: flex;
+flex-direction: column;
+justify-content: center;    
+margin: 24px auto 8px;
+width: fit-content;
+}   
+
+.container{
+width: 256px;
+margin: 0 auto;
+}
+
+.btn{
+display: flex;
+justify-content: center;    
+margin-bottom: 24px;    
+box-sizing: border-box;
+height: 40px;
+width: 256px;
+padding-top: 11px;
+border: 1px solid #FFFFFF;
+color: #F2F2F2;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+letter-spacing: 0;
+line-height: 19px;
+text-decoration: none;
+}
+
+.badge {
+height: 36px;
+width: 124px;
+}
+
+.social-media{
+margin-top: 16px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+.socialmedia-btn {
+  height: 26px;
+  width: 26px;
+}
+
+  }
     
-    body{
-        background: rgb(153,204,222);
-        background: linear-gradient(99deg, rgba(153,204,222,1) 0%, rgba(113,178,201,1) 35%, rgba(68,134,156,1) 100%);
-        font-family: Montserrat;
-        }
-        
-        
+
+  @media only screen and (max-device-width: 768px) {
+
+    .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    margin: 72px auto 32px;
+    width: fit-content;
+    }   
+    
+    .container{
+    width: 404px;
+    margin: 0 auto;
+    }
+    
+    .btn{
+    display: flex;
+    justify-content: center;    
+    margin-bottom: 32px;    
+    box-sizing: border-box;
+    height: 48px;
+    width: 404px;
+    padding: 16px 0;
+    border: 1px solid #FFFFFF;
+    color: #F2F2F2;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 19px;
+    text-decoration: none;
+    }
+    
+    .badge {
+    width: 170px;
+    }
+    
+    .social-media{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+    
+    .socialmedia-btn {
+      height: 40px;
+    }
+    
+      }
+
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait) {
+
         .header {
         display: flex;
         flex-direction: column;
         justify-content: center;    
-        margin: 120px auto 40px;
-        }
+        margin: 72px auto 48px;
+        width: fit-content;
+        }   
+
+        .avatar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-sizing: border-box;
+            height: 180px;
+            width: 180px;
+            border: 2px solid #FFFFFF;
+            border-radius: 50%;
+            background-color: #71B2C9;
+            box-shadow: 0 3px 5px -1px rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12);
+            }
+            
+            p{    
+            height: 19px;
+            width: auto;
+            margin-top: 32px;
+            color: #F2F2F2;
+            font-family: Montserrat;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;  
+            }
+
         
         .container{
+        width: 604px;
         margin: 0 auto;
-        }
-        
-        
-        .avatar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        box-sizing: border-box;
-        height: 338px;
-        width: 338px;
-        border: 2px solid #FFFFFF;
-        border-radius: 50%;
-        background-color: #71B2C9;
-        box-shadow: 0 3px 5px -1px rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12);
-        }
-
-        .logo{
-            width: 238px;
-            align-self: center;
-        }
-        
-        p{    
-        height: 19px;
-        width: auto;
-        margin-top: 40px;
-        color: #F2F2F2;
-        font-family: Montserrat;
-        text-align: center;
-        font-size: 32px;
-        font-weight: 600;  
-        }
-        
-        .links-btn{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         }
         
         .btn{
         display: flex;
         justify-content: center;    
-        margin-bottom: 24px;    
+        margin-bottom: 40px;    
         box-sizing: border-box;
-        height: 52px;
-        width: 500px;
-        padding-top: 14px;
+        height: 64px;
+        width: 604px;
+        padding: 24px 0;
         border: 1px solid #FFFFFF;
         color: #F2F2F2;
         font-family: Montserrat;
-        font-size: 16px;
+        font-size: 22px;
         font-weight: 500;
         letter-spacing: 0;
         line-height: 19px;
         text-decoration: none;
         }
         
-        .btn:hover{
-        background-color: #FFFFFF;
-        color: #71B2C9;
+        .badge {
+        width: 270px;
         }
-        
-        .app-badge{  
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        }
-        
-        .badge:hover{
-            opacity:0.5;
-            }
         
         .social-media{
-        margin-top: 64px;
+        margin-top: 56px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         }
         
-        .socialmedia-btn:hover{
-        opacity:0.5;
+        .socialmedia-btn {
+          height: 48px;
         }
-
-
-
-
-
-
-  } */
+        
+          }
